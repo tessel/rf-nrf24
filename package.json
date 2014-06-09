@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/natevw/node-nrf.git"
+    "url": "git@github.com:tessel/rf-nrf24.git"
   },
   "keywords": [
     "nrf24l01",
@@ -19,18 +19,12 @@
   ],
   "author": "Nathan Vander Wilt",
   "license": "BSD-2-Clause",
-  "homepage": "https://github.com/natevw/node-nrf",
+  "homepage": "https://github.com/tessel/rf-nrf24",
   "bugs": {
-    "url": "https://github.com/natevw/node-nrf/issues"
+    "url": "https://github.com/tessel/rf-nrf24/issues"
   },
   "dependencies": {
-    "pi-spi": "~0.8.1",
     "queue-async": "~1.0.4",
-    "pi-pins": "^1.0.0"
-  },
-  "hardware": {
-    "pi-spi": false,
-    "pi-pins": false
   },
   "devDependencies": {
     "tinytap": "~0.0.2"
