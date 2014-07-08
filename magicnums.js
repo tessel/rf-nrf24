@@ -3,7 +3,7 @@
 function _b(v) {
     if (v.length !== 9) throw Error("Proper conversion not implemented for this size string!");
     var n = 0;
-    Array.prototype.forEach.call(v.replace(' ',''), function (l, i) {
+    v.replace(' ','').split('').forEach(function (l, i) {
         if (l === '1') n += 1 << (7 - i);
     });
     return n;
