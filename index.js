@@ -4,6 +4,7 @@ var q = require('queue-async'),
     events = require('events'),
     _m = require("./magicnums");
 
+var DEBUG = false;
 var tessel;
 try {
     tessel = require('tessel');
@@ -89,7 +90,7 @@ function nrf(type, hardware) {
     var _spi = type;
     var _ce, _irq, ce, irq, spi;
     var nrf = new events.EventEmitter();
-    nrf._debug = true;
+    nrf._debug = DEBUG;
     if (type == 'tessel') {
         _ce = "builtin";
         _irq = "builtin";

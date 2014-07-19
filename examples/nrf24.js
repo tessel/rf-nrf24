@@ -15,8 +15,6 @@ var nrf = NRF24.channel(0x4c) // set the RF channel to 76. Frequency = 2400 + RF
 	.autoRetransmit({count:15, delay:4000})
 	.use(tessel.port['A']);
 
-nrf._debug = false;
-
 nrf.on('ready', function () {
 	setTimeout(function(){
 		nrf.printDetails();
