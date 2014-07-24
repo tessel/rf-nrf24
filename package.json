@@ -4,7 +4,7 @@
   "description": "nRF24L01 driver library",
   "main": "index.js",
   "scripts": {
-    "test": "tinytap -e 'tessel run {}' test/*.js"
+    "test": "tinytap -e 'tessel run {} ${NRF_PORT1} ${NRF_PORT2}' test/*.js"
   },
   "repository": {
     "type": "git",

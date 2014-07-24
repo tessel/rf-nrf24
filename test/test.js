@@ -65,5 +65,5 @@ function go (port, role) {
 // hold this process open
 process.ref();
 
-go(tessel.port['B'], 'ping');
-go(tessel.port['GPIO'], 'pong');
+go(tessel.port[process.argv[2] || 'A'], 'ping');
+go(tessel.port[process.argv[3] || 'B'], 'pong');
