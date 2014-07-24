@@ -27,6 +27,6 @@
     "queue-async": "~1.0.4"
   },
   "devDependencies": {
-    "tinytap": "~0.0.2"
+    "tinytap": "^0.2.0"
   }
 }
