@@ -1,12 +1,5 @@
-//function _b(v) { return parseInt(v.replace(' ',''),2); }
-// WORKAROUND: https://github.com/tessel/beta/issues/206
 function _b(v) {
-    if (v.length !== 9) throw Error("Proper conversion not implemented for this size string!");
-    var n = 0;
-    v.replace(' ','').split('').forEach(function (l, i) {
-        if (l === '1') n += 1 << (7 - i);
-    });
-    return n;
+    return parseInt(v.replace(' ',''), 2);
 }
 
 exports.COMMANDS = {
